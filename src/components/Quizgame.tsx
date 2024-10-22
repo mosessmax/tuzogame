@@ -47,7 +47,7 @@ const AWPGame = () => {
     setError(null);
     try {
       const response = await fetch('/api/questions');
-      if (!response.ok) throw new Error('failed to fetch questions');
+      if (!response.ok) throw new Error('ailed to fetch questions');
       const data = await response.json();
       setQuestions(data);
     } catch (error) {
